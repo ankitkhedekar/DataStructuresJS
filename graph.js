@@ -1,4 +1,4 @@
-//https://medium.freecodecamp.com/a-gentle-introduction-to-data-structures-how-graphs-work-a223d9ef8837#.vcr0fgo1x
+//
 
 let MakeGraph = () =>{
   let graph = {};
@@ -37,6 +37,10 @@ let MakeGraph = () =>{
     }
   }
 
+  graph.hasEdge = (startNode, endNode) => {
+    return graph.contains(startNode) && graph.contains(endNode) && graph[startNode].edges[endNode] === true
+  }
+
   return graph;
 }
 
@@ -59,8 +63,9 @@ console.log("removed edge", devBook);
 
 devBook.removeVertex('Linus Torvalds');
 console.log("removed vertex", devBook);
-*/
 
+console.log(devBook.hasEdge('James Gosling', 'Guido Rossum'));
+console.log(devBook.hasEdge('James Gosling', 'Michael Olorunnisola'));*/
 //addNode is O(1)
 
 //addEdge is O(1)
