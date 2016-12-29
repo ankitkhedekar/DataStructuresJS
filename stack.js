@@ -11,7 +11,7 @@ class Stack {
   }
 
   pop(){
-    if(this._position > 1){
+    if(this._position > -1){
       let val = this._storage[this._position];
       delete this._storage[this._position--];
       return val;
@@ -40,3 +40,5 @@ console.log("top:", browserHistory.top());*/
 //pop (removal) : O(1)
 //top : O(1)
 //find in stack : O(1)
+
+module.exports = Stack;
