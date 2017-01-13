@@ -43,3 +43,5 @@ console.log("size:", iphoneQueue.size());*/
 //enqueue (addition) : O(1)
 //dequeue (removal) : O(1)
 //size : O(1)
+
+module.exports = Queue;
