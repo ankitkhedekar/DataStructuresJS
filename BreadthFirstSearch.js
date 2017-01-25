@@ -15,7 +15,6 @@ function buildPath(path, targetNode){
 }
 
 function bfs(graph, startNode, targetNode){
-  debugger;
   var path = [];
   var visited = [];
   var current, previous;
